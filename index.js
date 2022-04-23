@@ -9,12 +9,12 @@ const puppeteer = require('puppeteer');
             const rawData = await page.evaluate(() => {
                 const table = document.getElementById("tabledatasii");
                 const trLength = table.getElementsByTagName("tr").length;
-                let jsonData = [];
+                const jsonData = [];
                 let obj = {};
 
-                let htmlToJSON = (index) => {
+                const htmlToJSON = (index) => {
                     let tr = table.getElementsByTagName("tr")[index];
-                    let td = tr.getElementsByTagName("td");
+                    const td = tr.getElementsByTagName("td");
                     let arr = [].map.call( td, td => {
                         return td.innerHTML;
                     }).join( ',' );
