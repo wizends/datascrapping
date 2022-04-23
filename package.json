@@ -1,0 +1,25 @@
+{
+  "name": "scrapping",
+  "version": "1.0.0",
+  "description": "to scarp ssi",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "wizends",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "playwright": "^1.21.1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.3",
+    "fs": "^0.0.1-security",
+    "html-table-to-json": "^1.0.0",
+    "puppeteer": "^13.6.0",
+    "puppeteer-table-parser": "^1.4.1",
+    "request": "^2.88.2"
+  }
+}
